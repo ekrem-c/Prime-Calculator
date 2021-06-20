@@ -1,5 +1,7 @@
 ﻿using System;
 
+//the link I used to verify prime numbers: https://www.calculatorsoup.com/calculators/math/prime-number-calculator.php
+
 namespace PrimeCalculator
 {
     public class Program
@@ -10,8 +12,6 @@ namespace PrimeCalculator
             if (number == 2) return true;
             if (number % 2 == 0) return false;
 
-
-            //if it's a non-prime number, it will certainly have a multiplier smaller than its square root. so we can just check that.
 
             int cutOff = (int)Math.Sqrt(number);
 
