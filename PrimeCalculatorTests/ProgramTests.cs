@@ -31,6 +31,14 @@ namespace PrimeCalculator.Tests
             Assert.IsFalse(Program.isPrime(negative));
         }
 
+        [TestMethod()]
+        public void isPrimeBigNonPrimeTest()
+        {
+            int nonPrime = 75;
+
+            Assert.IsFalse(Program.isPrime(nonPrime));
+        }
+
 
 
     }
