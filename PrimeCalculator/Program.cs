@@ -2,7 +2,7 @@
 
 namespace PrimeCalculator
 {
-    class Program
+    public class Program
     {
         public static bool isPrime(int number)
         {
