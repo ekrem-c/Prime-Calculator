@@ -63,6 +63,7 @@ namespace PrimeCalculator.Tests
             Assert.IsTrue(Program.isPrime(bigNumber));
         }
 
+        [TestMethod()]
         public void isPrimeBigNumNonPrimeTest()
         {
             List<int> bigNonPrimes = new List<int> { 1000, 1002, 1004, 1006, 1008, 1010, 1012, 1014, 1016, 1018, 1020, 1024, 1026, 1028 };
