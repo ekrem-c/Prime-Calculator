@@ -16,5 +16,22 @@ namespace PrimeCalculator.Tests
         {
             Assert.IsTrue(true);
         }
+
+        [TestMethod()]
+        public void isPrimeInitialTest()
+        {
+            Assert.IsFalse(Program.isPrime(1));
+        }
+
+        [TestMethod()]
+        public void isPrimeNegativeValueTest()
+        {
+            int negative = -31;
+
+            Assert.IsFalse(Program.isPrime(negative));
+        }
+
+
+
     }
 }
