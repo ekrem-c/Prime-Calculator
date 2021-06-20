@@ -13,7 +13,7 @@ namespace PrimeCalculator
 
             int cutOff = (int)Math.Sqrt(number);
 
-            for (int i = 2; i < cutOff; i++)
+            for (int i = 3; i < cutOff; i += 2)
             {
                 if (number % i == 0) return false;
             }
@@ -22,7 +22,7 @@ namespace PrimeCalculator
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(isPrime(5));
+            Console.WriteLine(isPrime(2));
         }
     }
 }
